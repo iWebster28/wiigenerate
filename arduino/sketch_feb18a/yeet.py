@@ -11,6 +11,5 @@ print("COM3 connected")
 #ser.write(b'g')
 while 1:
 	serial_line = ser.readline()
-	#dumpfile.write(str(serial_line))
-	print(str(serial_line))
+	print(serial_line)
 
