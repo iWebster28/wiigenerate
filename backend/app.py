@@ -1,9 +1,9 @@
 # app.py
 from flask import Flask
 import base64
-import music21
-import np_utils
-import pygame
+# import music21
+# import np_utils
+# import pygame
 
 import numpy as np
 
@@ -29,7 +29,7 @@ def hello():
     return "Hello, World!"
 
 # Return the model prediction in MIDI format.
-@app.route('/predict', method=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     # Load model
     # model = joblib.load("model.pkl")
